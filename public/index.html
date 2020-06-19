@@ -106,6 +106,7 @@
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <script>
       {
+        let clicked = false;
         // const $video = document.getElementById('video');
         const $peerVideo = document.getElementById("peerVideo");
         const servers = {
@@ -122,7 +123,7 @@
         $btn.addEventListener("click", () => {
           $peerVideo.play();
           console.log("clicked")
-          const clicked = true
+          clicked = true
           $btn.style.display = "none";
         });
 
